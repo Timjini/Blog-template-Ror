@@ -14,16 +14,6 @@
  *= require_self
  */
 
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-body  {
-    font-family: 'Montserrat'; sans-serif;
-}
 nav {
     background: #000;
     color: #fff;
