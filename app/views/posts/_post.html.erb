@@ -1,8 +1,13 @@
 <div id="<%= dom_id post %>">
 <div class="container">
-    <h1>
-    <%= post.title %>
-    </h1>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <%= button_to "Destroy this post", @post , method: :delete%>
+  </div>
+</div>
+
 </div>
 
 </div>

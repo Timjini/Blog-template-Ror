@@ -1,1 +1,18 @@
   <%= render "layouts/hero" %>
+
+<% if current_user %>
+    <p>
+      Hello <%= current_user.username%>! 
+      <p> You are a [<%= current_user.role%>]</p>
+        <%= link_to "Sign Out", destroy_user_session_path, 'data-turbo-method': :delete %>
+      <% if current_user.admin? %>
+        How many admins <%= User.count %>
+      <% end %>
+    </p>
+    <% else %>
+<p> Hi there ! </p> 
+
+
+  <%= link_to "Sign Up !", new_user_registration_path%>
+  <%= link_to "Log In", new_user_session_path%>
+  <%end%>
