@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   root 'home#index'
   
   get 'pages/home'
-  devise_for :users, controllers: {
-    sessions: 'users/sessions'
-  }
+  devise_for :users
   resources :posts
 
 end
