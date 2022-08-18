@@ -2,15 +2,27 @@
 
 <div class="container">
 <% if @post.image.attached? %>
-<%= image_tag @post.image, style: "width:200px; display:block" %>
+<div class= "row">
+<%= image_tag @post.image, 
+        style: "
+        width:100%;
+        height:auto;
+        max-height:90vh;
+        " %>
+</div>
 <%end%>
+  <h1 class="text-center"><%=@post.title %></h1>
   <%= @post.body %>
 </div>
 
-<div>
+<%
+=begin%>
+ <div>
   <%= link_to "Edit this post", edit_post_path(@post) , class: 'btn btn-secondary' %> |
   <%= link_to "Back to posts", posts_path,  class: 'btn btn-secondary' %>
 
   <%= button_to "Destroy this post", @post, method: :delete %>
-</div>
+</div> 
+<%
+=end%>
 

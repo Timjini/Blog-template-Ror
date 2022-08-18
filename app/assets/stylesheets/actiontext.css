@@ -23,20 +23,26 @@
 .trix-content .attachment-gallery.attachment-gallery--4 > .attachment {
   flex-basis: 50%;
   max-width: 50%;
-  height: 30vh;
+  height: 50vh;
   width: 100%;
 }
 
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
   max-width: 100% !important;
+  height: 20vh;
 }
 
 .trix-content .attachment--preview .attachment__caption {
-  color: #242424;
+  color: #fff;
   position: relative;
-  margin-top: -10vh;
-  font-size: 16px;
+  margin-top: -12vh;
+  font-size: 20px;
   margin-bottom: 150px;
-  background-color: #fff;
+
+}
+
+.trix-content img {
+  height: 50vh;
+  padding-bottom: 5rem;
 }

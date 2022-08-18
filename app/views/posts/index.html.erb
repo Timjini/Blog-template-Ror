@@ -2,16 +2,15 @@
 
 <div class="container p-5">
 <h1>Posts</h1>
+<%= link_to "New post", new_post_path , class: 'btn btn-primary' %>
+
 
 <div id="posts">
 <% @posts.each do |post| %>
 
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post , class:'btn btn-secondary' %>
-    </p>
+
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path , class: 'btn btn-primary' %>
 </div>

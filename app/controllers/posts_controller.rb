@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!  , except: [:show]
 
   # GET /posts or /posts.json
   def index
@@ -65,7 +66,8 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:title, :body, :image )
+      params.require(:post).permit(:title, :body, :image , :category)
     end
+
 
 end
