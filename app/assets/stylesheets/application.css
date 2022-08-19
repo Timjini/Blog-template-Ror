@@ -108,10 +108,23 @@ media
 }
 
 .container-fluid{
-    background-image: url(images/wntl-banner.jpg);
+    background-image: url(https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .mainFooter {
     background-color: #000;
     height: 30vh;
+}
+
+.headerContent{
+    background-color: #000;
+}
+
+.userContent {
+    background-color: #000;
+    border-radius: 2rem;
 }

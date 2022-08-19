@@ -1,5 +1,5 @@
 <section>
-  <div class="container">
+  <div class="container p-2">
     <%= form_with(model: @post , local: true) do |form| %>
       <% if post.errors.any? %>
         <div style="color: red">
@@ -13,31 +13,31 @@
         </div>
       <% end %>
 
-      <div>
+      <div class="p-2">
         <% if @post.image.attached? %>
           <%= image_tag @post.image, style: "width:200px; display:block" %>
         <%end%>
       </div>
 
-      <div>
+      <div class="p-2">
         <%= form.text_field :title , class: 'form-control', placeholder: 'Title' %>
       </div>
 
-      <div>
+      <div class="p-2">
         <%= form.label :image %>
         <%= form.file_field :image, class: "form-control" %>
       
       </div>
-      <div>
-        <%= form.select :category,  options_for_select(Post.categories.map {|key, value| [key.titleize, Post.categories.key(value)]}, @post.category)  %>
+      <div class="p-2">
+        <%= form.select :category,  options_for_select(Post.categories.map {|key, value| [key.titleize, Post.categories.key(value)]}, @post.category) , class: 'form-select' %>
       </div>
       
-       <div>
-        <%= form.rich_text_area :body , class: 'form-control', placeholder: 'Post Here' %>
+       <div class="p-2">
+        <%= form.rich_text_area :body , class: 'form-control', placeholder: 'Post Here', style:" height:50vh" %>
       </div>
 
-      <div>
-        <%= form.submit %>
+      <div class="p-2">
+        <%= form.submit "Submit", class: 'btn btn-success'%>
       </div>
   </div>
 </section>

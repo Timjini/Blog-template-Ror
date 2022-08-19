@@ -1,28 +1,26 @@
 <p style="color: green"><%= notice %></p>
 
-<div class="container">
-<% if @post.image.attached? %>
-<div class= "row">
-<%= image_tag @post.image, 
-        style: "
-        width:100%;
-        height:auto;
-        max-height:90vh;
-        " %>
-</div>
-<%end%>
-  <h1 class="text-center"><%=@post.title %></h1>
-  <%= @post.body %>
+<div class="container p-5">
+      <div class=" p-2">
+      <% if user_signed_in? %>
+      <%= link_to "Edit", edit_post_path(@post) , class: 'btn btn-secondary fa-solid fa-pen-to-square' %> 
+        <%= link_to "Back", posts_path,  class: 'btn btn-warning fa-regular fa-circle-left' %>
+        <%else%>
+      </div>
+      <%end%>
+      <% if @post.image.attached? %>
+      <div class= "row">
+      <%= image_tag @post.image, 
+              style: "
+              width:100%;
+              height:auto;
+              max-height:90vh;
+              display:flex
+              " %>
+      </div>
+      <%end%>
+        <h1 class="text-center"><%=@post.title %></h1>
+        <%= @post.body %>
 </div>
 
-<%
-=begin%>
- <div>
-  <%= link_to "Edit this post", edit_post_path(@post) , class: 'btn btn-secondary' %> |
-  <%= link_to "Back to posts", posts_path,  class: 'btn btn-secondary' %>
-
-  <%= button_to "Destroy this post", @post, method: :delete %>
-</div> 
-<%
-=end%>
 
