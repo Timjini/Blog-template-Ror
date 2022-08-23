@@ -1,23 +1,33 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
+<nav class="desktopNav">
+  <div class="menuContainer">
+    <div class="d-flex justify-content-start rightElement">
+      <ul>
+          <li><a href="#home">About</a></li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-center centerElement">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-end leftElement">
+    <ul>
+        <li><a href="#home">Link</a></li>
+        <li><a href="#home">Link</a></li>
+        <li><a href="#home">Link</a></li>
     </ul>
+    </div>
+    <%
+=begin%>
+ <div class="d-flex justify-content-center">
+      <%= image_tag "Cropped-logo.jpg", class:'logo' %>
+    </div> 
+<%
+=end%>
   </div>
+  
 </nav>
