@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+ *{
+  font-family: 'Poppins', sans-serif;
+}
 
 nav {
     background: #000;
@@ -131,8 +135,53 @@ li {
         color: white;
       }
       .logo {
-        height: 80px;
+        height: 35px;
         width: auto;
       }
 }
 
+/* Home page posts*/
+
+.hpContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding: 1rem;
+  gap: 10px;
+  height:fit-content;
+}
+
+.postCard {
+  
+}
+
+.cardContent {
+  background-color: #000;
+  padding: 16px;
+  height:fit-content;
+
+}
+
+.postImg {
+  max-height:50vh;
+}
+
+.postBtn {
+  background-color: pink;
+  color: white;
+  font-size: 12px;
+  padding: 14px 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+}
+
+
+/* Icons */
+.fa-solid , .fa-brands{
+  color: #fff;
+  font-size: 20px;
+  padding-left:5px ;
+}
