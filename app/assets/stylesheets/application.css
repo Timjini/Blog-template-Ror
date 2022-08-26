@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
  *{
   font-family: 'Poppins', sans-serif;
@@ -23,6 +26,9 @@ body {
 }
 .showBlog {
   min-height: 450px;
+}
+a:link{
+  text-decoration: none;
 }
 nav {
     background: #000;
@@ -42,7 +48,7 @@ ul {
 }
 
 li {
-    float: left;
+    float: left;  
     text-transform: uppercase;
   }
   
@@ -176,7 +182,7 @@ li {
 }
 
 .postImg {
-  max-height:50vh;
+  max-height: 60vh;
 }
 
 .postBtn {
@@ -300,3 +306,4 @@ li {
   
     }
   }
+

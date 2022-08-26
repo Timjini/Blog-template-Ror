@@ -27372,3 +27372,545 @@ Processing by PostsController#show as TURBO_STREAM
 Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.4ms | Allocations: 9101)
 
 
+Started GET "/" for ::1 at 2022-08-26 10:30:35 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.8ms | Allocations: 126)
+  Rendered layouts/_blog.html.erb (Duration: 138.6ms | Allocations: 44483)
+  Rendered home/index.html.erb within layouts/application (Duration: 142.3ms | Allocations: 45257)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 216)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.2ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 173.9ms | Allocations: 62812)
+Completed 200 OK in 190ms (Views: 179.2ms | ActiveRecord: 0.0ms | Allocations: 68165)
+
+
+Started GET "/" for ::1 at 2022-08-26 10:31:13 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layouts/_blog.html.erb (Duration: 3.2ms | Allocations: 1848)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1996)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 11049)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 11376)
+
+
+Started GET "/" for ::1 at 2022-08-26 10:31:30 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layouts/_blog.html.erb (Duration: 8.7ms | Allocations: 1846)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1994)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 11521)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms | Allocations: 11846)
+
+
+Started GET "/" for ::1 at 2022-08-26 10:32:12 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.4ms | Allocations: 119)
+  Rendered layouts/_blog.html.erb (Duration: 4.4ms | Allocations: 2279)
+  Rendered home/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2777)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 6981)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 8022)
+
+
+Started GET "/" for ::1 at 2022-08-26 11:42:57 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layouts/_blog.html.erb (Duration: 3.3ms | Allocations: 1846)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1994)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5175)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 5495)
+
+
+Started GET "/" for ::1 at 2022-08-26 13:55:26 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.8ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.8ms | Allocations: 185)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 688)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.5ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 9615)
+Completed 200 OK in 54ms (Views: 51.1ms | Allocations: 10656)
+
+
+Started GET "/" for ::1 at 2022-08-26 13:57:03 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.6ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 679)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.7ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 9611)
+Completed 200 OK in 32ms (Views: 30.6ms | Allocations: 10648)
+
+
+Started GET "/" for ::1 at 2022-08-26 15:03:58 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 160)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 8998)
+Completed 200 OK in 22ms (Views: 21.5ms | Allocations: 9317)
+
+
+Started GET "/" for ::1 at 2022-08-26 15:05:21 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 1.2ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.7ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 137.5ms | Allocations: 15665)
+Completed 500 Internal Server Error in 144ms (Allocations: 16679)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2022-08-26 15:05:38 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.4ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.5ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 678)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5319)
+Completed 500 Internal Server Error in 17ms (Allocations: 6321)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2022-08-26 15:05:51 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.3ms | Allocations: 13)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.3ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 160)
+  Rendered layouts/_header.html.erb (Duration: 1.8ms | Allocations: 217)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.8ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 10276)
+Completed 200 OK in 42ms (Views: 40.8ms | Allocations: 10599)
+
+
+Started GET "/" for ::1 at 2022-08-26 15:20:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.6ms | Allocations: 126)
+  Rendered layouts/_post_latest.html.erb (Duration: 1.2ms | Allocations: 181)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 962)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 219)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.7ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 186.2ms | Allocations: 74747)
+Completed 200 OK in 204ms (Views: 192.0ms | ActiveRecord: 0.0ms | Allocations: 80099)
+
+
+Started GET "/" for ::1 at 2022-08-26 15:20:53 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.6ms | Allocations: 119)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 640)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.7ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 5043)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 6087)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:20:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:21:33 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 2.4ms | Allocations: 126)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.6ms | Allocations: 138)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 919)
+  Rendered layout layouts/application.html.erb (Duration: 111.8ms | Allocations: 31613)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms | Allocations: 36914)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<ActionView::Base:0x0000000000c968>
+Did you mean?  javascript_path
+               javascript_tag):
+     7:   <%= csp_meta_tag %>
+     8: 
+     9:   <%= stylesheet_link_tag 'wind', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    12:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    13:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-08-26 15:22:12 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.4ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 638)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.8ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 18443)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 19516)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:22:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/posts" for ::1 at 2022-08-26 15:22:18 +0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms | Allocations: 3522)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-26 15:22:18 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 848)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 3786)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 7088)
+Completed 200 OK in 66ms (Views: 29.3ms | ActiveRecord: 16.4ms | Allocations: 15463)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:22:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:23:30 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.7ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 1.2ms | Allocations: 416)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 915)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.5ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 5356)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 6401)
+
+
+Started GET "/" for ::1 at 2022-08-26 15:24:27 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.5ms | Allocations: 126)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.8ms | Allocations: 414)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1195)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 219)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.6ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 172.3ms | Allocations: 70591)
+Completed 200 OK in 185ms (Views: 177.2ms | ActiveRecord: 0.0ms | Allocations: 75942)
+
+
+Started GET "/" for ::1 at 2022-08-26 15:24:47 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 1.2ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 3.9ms | Allocations: 140)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 639)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.5ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 15861)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.0ms | Allocations: 16905)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:24:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:27:33 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 1.2ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 1.5ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.4ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 13222)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms | Allocations: 14267)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:27:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:27:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:31:45 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 3.2ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.9ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.8ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 15588)
+Completed 200 OK in 63ms (Views: 58.8ms | Allocations: 16631)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:31:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:32:30 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.7ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.8ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 5140)
+Completed 200 OK in 28ms (Views: 26.2ms | Allocations: 6177)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:32:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:32:41 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 1.0ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.9ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 2.3ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.8ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5156)
+Completed 200 OK in 28ms (Views: 27.0ms | Allocations: 6194)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:32:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:32:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:32:51 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.5ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.4ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 2.0ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 5157)
+Completed 200 OK in 22ms (Views: 20.7ms | Allocations: 6195)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:32:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:33:06 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.8ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 1.3ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5131)
+Completed 200 OK in 20ms (Views: 18.3ms | Allocations: 6174)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:33:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:33:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:33:45 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.7ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 1.4ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 14656)
+Completed 200 OK in 49ms (Views: 48.5ms | Allocations: 15694)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:33:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:33:54 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.8ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.7ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 702)
+  Rendered layouts/_header.html.erb (Duration: 7.8ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.7ms | Allocations: 163)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5133)
+Completed 200 OK in 30ms (Views: 29.2ms | Allocations: 6172)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:33:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:33:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:34:28 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layouts/_post_latest.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 160)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 12406)
+Completed 200 OK in 37ms (Views: 36.7ms | Allocations: 12727)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:34:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:34:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:36:24 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 1.1ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 4.1ms | Allocations: 837)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1336)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 213)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.2ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 5622)
+Completed 200 OK in 21ms (Views: 20.3ms | Allocations: 6659)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:36:24 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:37:43 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layouts/_post_latest.html.erb (Duration: 1.3ms | Allocations: 577)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 725)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 11972)
+Completed 200 OK in 37ms (Views: 36.0ms | Allocations: 12292)
+
+
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:37:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:37:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/docs/images/blog/image-1.jpg" for ::1 at 2022-08-26 15:37:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/docs/images/blog/image-1.jpg"):
+  
+Started GET "/" for ::1 at 2022-08-26 15:38:12 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 0.8ms | Allocations: 118)
+  Rendered layouts/_post_latest.html.erb (Duration: 6.3ms | Allocations: 1382)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1881)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 7.3ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 6180)
+Completed 200 OK in 59ms (Views: 57.0ms | Allocations: 7217)
+
+
