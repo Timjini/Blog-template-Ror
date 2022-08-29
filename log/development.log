@@ -35389,3 +35389,422 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 304 Not Modified in 12ms (ActiveRecord: 0.0ms | Allocations: 174)
 
 
+Started GET "/" for ::1 at 2022-08-29 12:29:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered layouts/_hero.html.erb (Duration: 1.7ms | Allocations: 126)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/layouts/_post_latest.html.erb:1
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 35], ["record_type", "Post"], ["name", "image"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_post_latest.html.erb:4
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/views/layouts/_post_latest.html.erb:4
+  Rendered layouts/_post_latest.html.erb (Duration: 134.0ms | Allocations: 43510)
+  Rendered home/index.html.erb within layouts/application (Duration: 141.5ms | Allocations: 44300)
+  Rendered layouts/_header.html.erb (Duration: 3.6ms | Allocations: 217)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.9ms | Allocations: 159)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 388.0ms | Allocations: 89720)
+Completed 200 OK in 410ms (Views: 378.3ms | ActiveRecord: 18.8ms | Allocations: 95072)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cda1672f19f0ea10c7a06a3a46c4200f69aa28a4/DSC06593.jpg" for ::1 at 2022-08-29 12:29:13 +0300
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cda1672f19f0ea10c7a06a3a46c4200f69aa28a4", "filename"=>"DSC06593"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+[36m  Disk Storage (9.9ms) [0m[34mGenerated URL for file at key: m9xyo1p1ds80s8ox52j9xfef6496 (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiVGw0ZVc4eGNERmtjemd3Y3podmVEVXlhamw0Wm1WbU5qUTVOZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtSVFF6QTJOVGt6TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25SRk5ETURZMU9UTXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDgtMjlUMDk6MzQ6MTMuOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--f8e0e5b1d9ae660026941ec118566b0274188930/DSC06593.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiVGw0ZVc4eGNERmtjemd3Y3podmVEVXlhamw0Wm1WbU5qUTVOZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtSVFF6QTJOVGt6TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25SRk5ETURZMU9UTXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDgtMjlUMDk6MzQ6MTMuOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--f8e0e5b1d9ae660026941ec118566b0274188930/DSC06593.jpg
+Completed 302 Found in 20ms (ActiveRecord: 0.3ms | Allocations: 4338)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhiVGw0ZVc4eGNERmtjemd3Y3podmVEVXlhamw0Wm1WbU5qUTVOZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWtSVFF6QTJOVGt6TG1wd1p5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25SRk5ETURZMU9UTXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6IjIwMjItMDgtMjlUMDk6MzQ6MTMuOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--f8e0e5b1d9ae660026941ec118566b0274188930/DSC06593.jpg" for ::1 at 2022-08-29 12:29:14 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"DSC06593"}
+Completed 200 OK in 6ms (ActiveRecord: 0.0ms | Allocations: 244)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:37:21 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2220)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2301)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 18.2ms | Allocations: 12552)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+
+TML
+<section class="h-screen">
+  <div class="container px-6 py-12 h-full">
+    <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+      <div class="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+          class="w-full"
+          alt="Phone image"
+        />
+      </div>
+      <div class="md:w-8/12 lg:w-5/12 lg:ml-20">
+        <form>
+          <!-- Email input -->
+          <div class="mb-6">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' %>
+          </div>
+
+          <!-- Password input -->
+          <div class="mb-6">
+             <%= f.password_field :password, autocomplete: "current-password", class: 'form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' %>
+          </div>
+              <% if devise_mapping.rememberable? %>
+          <div class="flex justify-between items-center mb-6">
+            <div class="form-group form-check">
+                <%= f.check_box :remember_me, class:"form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" %>
+              <label class="form-check-label inline-block text-gray-800" for="exampleCheck2"
+                >Remember me</label
+              >
+            </div>
+            <%= render "devise/shared/links",class:'text-blue-600 hover:text-blue-700 focus:text-blue-700 active:text-blue-800 duration-200 transition ease-in-out' %>
+          </div>
+
+          <!-- Submit button -->
+          <button
+            type="submit"
+            class="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+            data-mdb-ripple="true"
+            data-mdb-ripple-color="light"
+          >
+            Sign in
+          </button>
+
+          <div
+            class="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
+          >
+            <p class="text-center font-semibold mx-4 mb-0">OR</p>
+          </div>
+
+          <a
+            class="px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            data-mdb-ripple="true"
+            data-mdb-ripple-color="light"
+          >
+            <!-- Facebook -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              class="w-3.5 h-3.5 mr-2"
+            >
+              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentColor"
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+              /></svg>Continue with Facebook
+          </a>
+          <a
+            class="px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            data-mdb-ripple="true"
+            data-mdb-ripple-color="light"
+          >
+            <!-- Twitter -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="w-3.5 h-3.5 mr-2"
+            >
+              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                fill="currentColor"
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+              /></svg>Continue with Twitter
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div class="p-8">
+    <div class="p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <form class="space-y-6" action="#">
+            <h5 class="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white' %>
+            </div>
+            <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
+                <%= f.password_field :password, autocomplete: "current-password", class: 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white' %>
+            </div>
+      <% if devise_mapping.rememberable? %>
+            <div class="flex items-start">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                    <%= f.check_box :remember_me, class:"w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" %>
+                    </div>
+                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                </div>
+            </div>
+            <%= f.submit "Log in", data:{turbo:false} , class:'w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'%>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                Not registered?<%= render "devise/shared/links",class:'text-blue-700 hover:underline dark:text-blue-500' %>
+            </div>
+        </form>
+    </div>
+</div>
+  <% end %>
+
+<% end %>
+
+
+):
+1:    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+2:    
+3:    
+4:    TML
+5:    <section class="h-screen">
+6:      <div class="container px-6 py-12 h-full">
+7:        <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+8:          <div class="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
+9:            <img
+10:              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+11:              class="w-full"
+12:              alt="Phone image"
+13:            />
+14:          </div>
+15:          <div class="md:w-8/12 lg:w-5/12 lg:ml-20">
+16:            <form>
+17:              <!-- Email input -->
+18:              <div class="mb-6">
+19:                <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' %>
+20:              </div>
+21:    
+22:              <!-- Password input -->
+23:              <div class="mb-6">
+24:                 <%= f.password_field :password, autocomplete: "current-password", class: 'form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none' %>
+25:              </div>
+26:                  <% if devise_mapping.rememberable? %>
+27:              <div class="flex justify-between items-center mb-6">
+28:                <div class="form-group form-check">
+29:                    <%= f.check_box :remember_me, class:"form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" %>
+30:                  <label class="form-check-label inline-block text-gray-800" for="exampleCheck2"
+31:                    >Remember me</label
+32:                  >
+33:                </div>
+34:                <%= render "devise/shared/links",class:'text-blue-600 hover:text-blue-700 focus:text-blue-700 active:text-blue-800 duration-200 transition ease-in-out' %>
+35:              </div>
+36:    
+37:              <!-- Submit button -->
+38:              <button
+39:                type="submit"
+40:                class="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+41:                data-mdb-ripple="true"
+42:                data-mdb-ripple-color="light"
+43:              >
+44:                Sign in
+45:              </button>
+46:    
+47:              <div
+48:                class="flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5"
+49:              >
+50:                <p class="text-center font-semibold mx-4 mb-0">OR</p>
+51:              </div>
+52:    
+53:              <a
+54:                class="px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
+55:                style="background-color: #3b5998"
+56:                href="#!"
+57:                role="button"
+58:                data-mdb-ripple="true"
+59:                data-mdb-ripple-color="light"
+60:              >
+61:                <!-- Facebook -->
+62:                <svg
+63:                  xmlns="http://www.w3.org/2000/svg"
+64:                  viewBox="0 0 320 512"
+65:                  class="w-3.5 h-3.5 mr-2"
+66:                >
+67:                  <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+68:                  <path
+69:                    fill="currentColor"
+70:                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+71:                  /></svg>Continue with Facebook
+72:              </a>
+73:              <a
+74:                class="px-7 py-3 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center"
+75:                style="background-color: #55acee"
+76:                href="#!"
+77:                role="button"
+78:                data-mdb-ripple="true"
+79:                data-mdb-ripple-color="light"
+80:              >
+81:                <!-- Twitter -->
+82:                <svg
+83:                  xmlns="http://www.w3.org/2000/svg"
+84:                  viewBox="0 0 512 512"
+85:                  class="w-3.5 h-3.5 mr-2"
+86:                >
+87:                  <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+88:                  <path
+89:                    fill="currentColor"
+90:                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+91:                  /></svg>Continue with Twitter
+92:              </a>
+93:            </form>
+94:          </div>
+95:        </div>
+96:      </div>
+97:    </section>
+98:    
+99:    
+100:    
+101:    
+102:    
+103:    <div class="p-8">
+104:        <div class="p-4 w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+105:            <form class="space-y-6" action="#">
+106:                <h5 class="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
+107:                <div>
+108:                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+109:            <%= f.email_field :email, autofocus: true, autocomplete: "email", class:'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white' %>
+110:                </div>
+111:                <div>
+112:                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
+113:                    <%= f.password_field :password, autocomplete: "current-password", class: 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white' %>
+114:                </div>
+115:          <% if devise_mapping.rememberable? %>
+116:                <div class="flex items-start">
+117:                    <div class="flex items-start">
+118:                        <div class="flex items-center h-5">
+119:                        <%= f.check_box :remember_me, class:"w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" %>
+120:                        </div>
+121:                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+122:                    </div>
+123:                </div>
+124:                <%= f.submit "Log in", data:{turbo:false} , class:'w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'%>
+125:                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+126:                    Not registered?<%= render "devise/shared/links",class:'text-blue-700 hover:underline dark:text-blue-500' %>
+127:                </div>
+128:            </form>
+129:        </div>
+130:    </div>
+131:      <% end %>
+132:    
+133:    <% end %>
+  
+app/views/devise/sessions/new.html.erb:136: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/sessions/new.html.erb:136: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/sessions/new.html.erb:136: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/sessions/new.html.erb:136: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/sessions/new.html.erb:136: syntax error, unexpected end-of-input, expecting `end'
+app/views/devise/sessions/new.html.erb:136: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:38:23 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 857)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 41.5ms | Allocations: 7760)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.9ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 2.2ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 73.2ms | Allocations: 12427)
+Completed 200 OK in 85ms (Views: 80.8ms | ActiveRecord: 0.0ms | Allocations: 13796)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-08-29 12:38:30 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms | Allocations: 474)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 879)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 4529)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 5139)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:38:47 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 584)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2047)
+  Rendered layouts/_header.html.erb (Duration: 3.3ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.0ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 6690)
+Completed 200 OK in 62ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 8158)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:39:05 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.8ms | Allocations: 582)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 1776)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.1ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 2.5ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 6419)
+Completed 200 OK in 58ms (Views: 53.3ms | ActiveRecord: 0.0ms | Allocations: 7898)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:39:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 582)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1779)
+  Rendered layouts/_header.html.erb (Duration: 2.1ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.7ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 2.4ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 6421)
+Completed 200 OK in 56ms (Views: 51.2ms | ActiveRecord: 0.0ms | Allocations: 7864)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:40:49 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.9ms | Allocations: 582)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1780)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 1.4ms | Allocations: 160)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 6422)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 7879)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-08-29 12:41:09 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.2ms | Allocations: 582)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1777)
+  Rendered layouts/_header.html.erb (Duration: 2.5ms | Allocations: 212)
+  Rendered layouts/_mobileHeader.html.erb (Duration: 3.0ms | Allocations: 161)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 47.4ms | Allocations: 6420)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 7869)
+
+
