@@ -2,23 +2,24 @@
 
 <div class="container p-2">
       <div class=" p-2">
-      <% if user_signed_in? %>
-      <%= link_to "Edit", edit_post_path(@post) , class: 'btn btn-secondary fa-solid fa-pen-to-square' %> 
-        <%= link_to "Back", posts_path,  class: 'btn btn-warning fa-regular fa-circle-left' %>
-        <%else%>
-      </div>
-      <%end%>
-      <% if @post.image.attached? %>
-      <div class= "row">
-        <div class="d-flex justify-content-center p-2">
-      <%= image_tag @post.image, class: 'img-fluid', style: 'width:auto; max-height:60vh' %>
+        <% if user_signed_in? %>
+        <%= link_to "Edit", edit_post_path(@post) , class: 'btn btn-secondary fa-solid fa-pen-to-square' %> 
+          <%= link_to "Back", posts_path,  class: 'btn btn-warning fa-regular fa-circle-left' %>
+          <%else%>
         </div>
-      </div>
-      <%end%>
-        <div class="container">
-          <h1 class="text-center"><%=@post.title %></h1>
-          <p><%= @post.body %></p>
+        <%end%>
+        <% if @post.image.attached? %>
+        <div class= "row">
+          <div class="d-flex justify-content-center p-2">
+        <%= image_tag @post.image, class: 'img-fluid', style: 'width:auto; max-height:60vh' %>
+          </div>
         </div>
+        <%end%>
+          <div class="container">
+            <h1 class="text-center"><%=@post.title %></h1>
+            <p><%= @post.body %></p>
+          </div>
+      </div>
 </div>
 
 
