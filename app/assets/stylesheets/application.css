@@ -307,3 +307,15 @@ li {
     }
   }
 
+/*****tailwind post Cars ****/  
+
+.postBtn{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.postBtn:hover {
+  background-color: #333337;
+}
+.postBg{
+  background-color: #fc04ac;
+}

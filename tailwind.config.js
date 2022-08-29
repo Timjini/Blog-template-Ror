@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./app/**/*.{html,js,erb}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pink: colors.pink,
+        'wntl-pink':'#ea27c2',
+      }
+    },
   },
   plugins: [],
 }
