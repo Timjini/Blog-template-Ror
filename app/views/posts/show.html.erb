@@ -1,7 +1,11 @@
-<p style="color: green"><%= notice %></p>
+<%
+=begin%>
+ <p style="color: green"><%= notice %></p> 
+<%
+=end%>
 
-<div class="container p-2">
-      <div class=" p-2">
+<div class="articlePage">
+      <div class="article">
         <% if user_signed_in? %>
         <%= link_to "Edit", edit_post_path(@post) , class: 'btn btn-secondary fa-solid fa-pen-to-square' %> 
           <%= link_to "Back", posts_path,  class: 'btn btn-warning fa-regular fa-circle-left' %>
@@ -11,13 +15,13 @@
         <% if @post.image.attached? %>
         <div class= "row">
           <div class="d-flex justify-content-center p-2">
-        <%= image_tag @post.image, class: 'img-fluid', style: 'width:auto; max-height:60vh' %>
+        <%= image_tag @post.image, class: 'img-fluid', style: 'width:auto; max-height:100vh' %>
           </div>
         </div>
         <%end%>
-          <div class="container">
+          <div class="post">
             <h1 class="text-center"><%=@post.title %></h1>
-            <p><%= @post.body %></p>
+            <%= @post.body %>
           </div>
       </div>
 </div>
