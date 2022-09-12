@@ -4,8 +4,8 @@ class Post < ApplicationRecord
 
     enum category: [:fashion, :shoes , :bags]
 
-    validates :title, presence: true,
-    validates :excerpt, presence: true,
+    validates :title, presence: true
+    validates :excerpt, presence: true
     validates :body, presence: true
     validates :image, presence: true
     validates :category, presence:true
