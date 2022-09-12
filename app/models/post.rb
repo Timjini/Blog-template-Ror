@@ -4,8 +4,8 @@ class Post < ApplicationRecord
 
     enum category: [:fashion, :shoes , :bags]
 
-    validates :title, presence: true, length: {minimum: 40, maximum:50}
-    validates :excerpt, presence: true, length:{minmum: 20, maximum: 100}
+    validates :title, presence: true,
+    validates :excerpt, presence: true,
     validates :body, presence: true
     validates :image, presence: true
     validates :category, presence:true
