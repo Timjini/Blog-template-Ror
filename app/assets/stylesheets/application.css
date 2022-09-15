@@ -23,7 +23,7 @@
 }
 html,body
 {
-    width: 100%;
+    width: auto;
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -39,14 +39,18 @@ html,body
 }
 
 
-/*****tailwind post Cars ****/  
+/*****tailwind post Cars ****/ 
+
+.cardContainer{
+  background-color: #f5f5f5;
+}
 
 .postBtn{
   background-color: transparent;
   border: 1px solid #fff;
 }
 .postBtn:hover {
-  background-color: #333337;
+  background-color: #131316;
 }
 .postBg{
   background-color: #fc04ac;
@@ -66,18 +70,29 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fc04ac;
+  background: #f5f5f5;
   color: #fff;
   padding-left: 2rem!important;
   padding-right: 1rem!important;
-  padding-top: 1rem!important;
+  padding-top: 0.2rem!important;
+  max-height: 70px;
  }
  .nav-links a {
-  color: #fff;
+  color: #131316;
+ }
+ .left-menu {
+  padding-right: 2rem;
+ }
+ .contactbtn{
+  background-color: #fc04ac;
+  color:#f5f5f5!important;
+  border-radius: 0.5rem;
+  padding: 10px 20px 10px 20px;
  }
  /* LOGO */
  .logo {
   font-size: 32px;
+  color:#131316;
  }
  /* NAVBAR MENU */
  .menu {
@@ -85,6 +100,7 @@ a:hover{
   gap: 1em;
   font-size: 18px;
   padding-top: 1rem;
+
  }
  .menu li:hover {
   border-radius: 5px;
@@ -92,8 +108,8 @@ a:hover{
   color:#f5f5f5
  }
  .menu li {
-  padding: 5px 14px;
-  text-transform: uppercase;
+  padding: 5px 10px;
+  font-size:1rem;
  }
  /* DROPDOWN MENU */
  .services {
@@ -132,9 +148,11 @@ input[type=checkbox]{
   display: none;
   font-size: 24px;
   user-select: none;
+  padding-top: 1rem;
+  color:#131316;
  }
  /* APPLYING MEDIA QUERIES */
- @media (max-width: 768px) {
+ @media (max-width: 810px) {
  .menu { 
   display:none;
   position: absolute;
@@ -144,7 +162,14 @@ input[type=checkbox]{
   left: 0;
   text-align: center;
   padding: 16px 0;
+  margin-top: 1rem;
+  z-index: 999;
+
  }
+
+ /* .left-menu{
+  display: none;
+ } */
  .menu li:hover {
   display: inline-block;
   background-color:#f5f5f5;
@@ -336,3 +361,79 @@ border:0px;
 }
 .copyright a{color:#f5f5f5;transition: all 0.2s ease 0s;}
 .copyright a:hover{color:#fc04ac;}
+
+/*cards Animation */
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+@media(prefers-reduced-motion){
+  .hidden {
+      transition: none;
+  }
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+/*SLIDER*/
+
+.swiper {
+  width: auto;
+  height: 60vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Hero Content*/
+.herocontent{
+  position: absolute;
+  color:#f5f5f5;
+  background-color: rgb(0, 0, 0,0.3);
+  padding: 2rem;
+  border-radius: 2px;
+
+}
+.herotitle{
+  font-size: 4rem;
+  text-transform: uppercase;
+  color:#f5f5f5
+}
+
+.herobtn{
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  background-color: transparent;
+  padding: 5px 10px 5px 10px
+}

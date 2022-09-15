@@ -1,10 +1,10 @@
 <% Post.all.each do |post| %>
-    <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
+    <div class=" max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-2">
         <a href="#">
         <%= image_tag post.image , class:"rounded-t-lg" %>
         </a>
         <div class="p-4 postBg">
-            <%= link_to post.title , post ,class:'mb-2 text-2xl font-bold tracking-tight text-white dark:text-white' %>
+            <%= link_to post.title , post ,class:'postTitle mb-2 text-2xl font-bold tracking-tight text-white dark:text-white' %>
             <p class="mb-3 font-normal text-gray-700 text-white dark:text-gray-400"><%= post.excerpt%></p>
             <%= link_to 'Read more', post, class:'postBtn inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-wntl-pink rounded-lg hover:bg-pink focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'%>
         </div>
