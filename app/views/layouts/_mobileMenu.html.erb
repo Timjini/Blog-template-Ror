@@ -1,6 +1,6 @@
  <nav class="navbar">
      <!-- LOGO -->
-     <div class="logo">FASHION</div>
+     <a href="/" class="logo">👛👠</a>
      <!-- NAVIGATION MENU -->
      <ul class="nav-links">
        <!-- USING CHECKBOX HACK -->
@@ -8,13 +8,18 @@
        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
        <!-- NAVIGATION MENUS -->
        <div class="menu">
-         <li><a href="/">Latest Posts</a></li>
-         <li><a href="/">About us</a></li>
+        <% if user_signed_in? %>
+       <li><a href="/login" class="contactbtn">Create a new Post</a></li>
+       <li><%= link_to "Sign Out", destroy_user_session_path, class:'logout', 'data-turbo-method': :delete%></li>
+          <%else%>
+         <li><a href="/contact">Latest Posts</a></li>
+         <li><a href="/about">About us</a></li>
          <li class="services">
-           <a href="/">Shop the look</a>
+           <a href="/shop-the-look">Shop the look</a>
          </li>
-         <li><a href="/">Contact</a></li>
-     <li><a href="/" class="contactbtn">Join Us</a></li>
+         <li><a href="/contact">Contact</a></li>
+              <li><a href="/login" class="contactbtn">Join Us</a></li>
        </div>
      </ul>
+<%end%>
    </nav>
