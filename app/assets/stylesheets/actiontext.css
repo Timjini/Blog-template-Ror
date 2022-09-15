@@ -35,8 +35,9 @@
 
 .trix-content .attachment--preview .attachment__caption {
   color: #242424;
-  font-size: 20px;
+  font-size: 1.8rem;
   margin-bottom: 150px;
+  text-transform: uppercase;
 
 }
 
@@ -47,6 +48,8 @@
 
 .trix-content img {
   height: 100vh;
+  margin: auto;
+  padding: 10px;
 }
 
 trix-editor {
@@ -67,4 +70,5 @@ trix-editor {
   margin-right: auto;
     margin-left: auto;
     max-width: 45rem;
+    padding-bottom: 2rem;
 }

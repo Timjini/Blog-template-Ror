@@ -23,3 +23,14 @@ let textarea = document.querySelector(".resize-ta");
 textarea.addEventListener("keyup", () => {
   textarea.style.height = calcHeight(textarea.value) + "px";
 });
+
+
+//Navbar hamburger button
+
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
