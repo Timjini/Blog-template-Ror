@@ -1,6 +1,6 @@
  <nav class="navbar">
      <!-- LOGO -->
-     <a href="/" class="logo">👛👠</a>
+     <a href="/" class="logo">FASHION</a>
      <!-- NAVIGATION MENU -->
      <ul class="nav-links">
        <!-- USING CHECKBOX HACK -->
@@ -9,7 +9,8 @@
        <!-- NAVIGATION MENUS -->
        <div class="menu">
         <% if user_signed_in? %>
-       <li><a href="/login" class="contactbtn">Create a new Post</a></li>
+       <li><%= link_to "New Post" ,new_post_path%></li>
+       <li><a href="/posts" class="contactbtn">My Posts</a></li>
        <li><%= link_to "Sign Out", destroy_user_session_path, class:'logout', 'data-turbo-method': :delete%></li>
           <%else%>
          <li><a href="/contact">Latest Posts</a></li>

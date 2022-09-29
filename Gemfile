@@ -48,6 +48,8 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
+#gem "view_component", '~> 2.22', '>= 2.22.1', require: "view_component/engine"
+
 gem 'rails_12factor', group: :production
 
 

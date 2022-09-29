@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @shopthelook %>
+
+<div>
+  <%= link_to "Edit this shopthelook", edit_shopthelook_path(@shopthelook) %> |
+  <%= link_to "Back to shopthelooks", shopthelooks_path %>
+ <%
+=begin%>
+ <%= button_to "Destroy this shopthelook", shopthelook, method: :delete %> 
+<%
+=end%>
+</div>

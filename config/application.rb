@@ -21,5 +21,6 @@ module FashionBlog
     config.active_storage.variant_processor = :mini_magick
     config.serve_static_files = true 
 
+
   end
 end

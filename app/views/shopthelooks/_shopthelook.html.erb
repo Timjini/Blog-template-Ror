@@ -1,0 +1,25 @@
+<div id="<%= dom_id shopthelook %>">
+  <p>
+    <strong>Description:</strong>
+    <%= link_to image_tag(shopthelook.picture), shopthelook.url,:target => "_blank" %>
+    <br/>
+    <%= shopthelook.description %>
+  </p>
+  <p>
+    <strong>Url:</strong>
+    <%= shopthelook.url %>
+  </p>
+
+  <p>
+    <strong>Url1:</strong>
+    <%= shopthelook.url1 %>
+  </p>
+
+  <p>
+    <strong>Url2:</strong>
+    <%= shopthelook.url2 %>
+  </p>
+  <% shopthelook.images.each do |image|%>
+    <%= link_to image_tag(image) %>
+<%end%>
+</div>
